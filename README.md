@@ -9,7 +9,7 @@ https://www.oracle.com/database/technologies/oracle-database-software-downloads.
 
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-$ git clone https://github.com/oracle/docker-images.git
+> git clone https://github.com/oracle/docker-images.git
 
 * Copy file linuxx64_12201_database.zip
 
@@ -47,9 +47,11 @@ $ docker ps
 * Tools : Datagrip , SQL Developer
 
 * Remove docker images
+
 $ sudo docker ps -as
 
 $ sudo docker rmi <IMAGE_ID> -f
 
 * Remove unused data
+
 $ docker system prune
