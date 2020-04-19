@@ -1,21 +1,22 @@
 # Docker Oracle Database 12c Release 2
 Setting Docker Oracle Database 12c Release 2
 
-Download Oracle Database 12c Release 2
+* Download Oracle Database 12c Release 2
 
 https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
 
-Download Java SE Development Kit 8
+* Download Java SE Development Kit 8
 
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 $ git clone https://github.com/oracle/docker-images.git
 
-Copy file linuxx64_12201_database.zip
-Path :: docker-images/OracleDatabase/SingleInstance/dockerfiles/12.2.0.1
+* Copy file linuxx64_12201_database.zip
 
-Docker => preference => Daemon => Advanced
-add :: "dns" : [ "8.8.8.8", "8.8.4.4" ]
+* Path :: docker-images/OracleDatabase/SingleInstance/dockerfiles/12.2.0.1
+
+* Docker => preference => Daemon => Advanced
+> add :: "dns" : [ "8.8.8.8", "8.8.4.4" ]
 
 $ cd docker-images/OracleDatabase/SingleInstance/dockerfiles
 
@@ -43,12 +44,12 @@ oracle/database:12.2.0.1-se2
 
 $ docker ps
 
-tools : datagrip , sql developer
+* Tools : Datagrip , SQL Developer
 
-Remove docker images
+* Remove docker images
 $ sudo docker ps -as
 
 $ sudo docker rmi <IMAGE_ID> -f
 
-Remove unused data
+* Remove unused data
 $ docker system prune
